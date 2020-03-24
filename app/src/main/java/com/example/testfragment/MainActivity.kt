@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             replaceFragment(secondFragment)
         }
     }
-     //R.id.containerに引数で渡されたフラグメントを入れる。
+    //R.id.containerに引数で渡されたフラグメントを入れる。
     fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
