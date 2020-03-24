@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#fde"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#fde"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:text="@string/firstFragment"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/to_sub"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#fff"
+                android:hint="@string/hint1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/from_sub"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:text="@string/move"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+</FrameLayout>
